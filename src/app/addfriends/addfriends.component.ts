@@ -26,7 +26,7 @@ export class AddfriendsComponent implements OnInit {
     this.myapi.addfriends(data).subscribe(
       (response)=>{
         console.log(response)
-        alert("successfully added")
+        alert("added successfully")
       }
     )
   }
