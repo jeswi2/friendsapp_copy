@@ -11,11 +11,13 @@ export class ViewfriendsComponent implements OnInit {
   constructor(private myapi:ApiService) {
     this.fetchData()
    }
+   status:boolean=false
 
   fetchData=()=>{
     this.myapi.viewfriends().subscribe(
       (data)=>{
         this.friendsData=data
+        this.status=true
       }
     )
   }
